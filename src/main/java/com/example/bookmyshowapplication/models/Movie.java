@@ -22,7 +22,7 @@ public class Movie extends BaseModel{
     //Here Feature is enum so make it as ordinal where it stores with integer id = 0, 1...
     //Also, it is list of feature so, provide ElementCollection(it means not storing 1 enum, it is storing list of feature(feature is enum))
     @Enumerated(EnumType.ORDINAL)
-    @ElementCollection//Why this @ElemenCollections, because it has list of enums
+    @ElementCollection//Why this @ElementCollections, because it has list of enums
     private List<Feature> featureList;
 }
 /*
